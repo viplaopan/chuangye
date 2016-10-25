@@ -13,13 +13,8 @@ return array(
      */
     'router' => array(
         /*翡翠页面*/
-		'home/article/index'         => 			'feicui/[category]',
-		/*翡翠内面*/
-		'home/fc/detail'         => 		'feicui/g_[id]',
-		/*和田玉页面*/
-		'home/hty/lists'         => 		'hetianyu/',
-		/*和田玉内面*/
-		'home/hty/detail'         => 		'hetianyu/g_[id]',
+		'main/article/detail'         => 			'article/[id]',
+		
     ),
 
 );
