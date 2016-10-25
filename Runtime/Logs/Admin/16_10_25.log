@@ -1,0 +1,74 @@
+[ 2016-10-25T16:44:41+08:00 ] 192.168.233.1 /admin.php?s=/SEO/doEditRule.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012444s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004524s ]
+SQL: SHOW COLUMNS FROM `xh_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `xh_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `xh_menu` WHERE ( pid !=0 AND url like '%SEO/doEditRule%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0006s ]
+SQL: UPDATE `xh_seo_rule` SET `title`='文章详情',`app`='Main',`controller`='Article',`action`='detail',`seo_title`='{$info.title}',`seo_keywords`='{$info.title}',`seo_description`='{$info.title}',`status`='1' WHERE `id` = 30 [ RunTime:0.0004s ]
+
+[ 2016-10-25T16:44:43+08:00 ] 192.168.233.1 /admin.php?s=/SEO/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `xh_hooks` [ RunTime:0.0004s ]
+SQL: SELECT `name`,`addons` FROM `xh_hooks`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xh_addons` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `xh_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0001s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.015520s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `xh_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `xh_menu` WHERE ( pid !=0 AND url like '%SEO/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xh_seo_rule` WHERE `status` >= 0 ORDER BY sort asc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xh_seo_rule` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Declaration of Admin\Builder\AdminListBuilder::display() should be compatible with Admin\Builder\AdminBuilder::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') /home/vagrant/Code/onethink/Application/Admin/Builder/AdminListBuilder.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008152s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.035302s ]
+NOTIC: [8] Undefined variable: show /home/vagrant/Code/onethink/Runtime/Cache/Admin/625aa09f53b4770c2c8b4c8e0fed1aea.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207259s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.219301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+

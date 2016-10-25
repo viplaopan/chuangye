@@ -1,0 +1,718 @@
+[ 2016-10-25T16:44:43+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212283 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385083 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_model` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`attribute_alias`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type` FROM `xh_model` WHERE `status` = 1 AND `extend` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xh_seo_rule` WHERE ( (app='' or app='Main') and (controller='' or controller='Article') and (action='' or action='detail') and status=1 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.086716s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004601s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004764s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002948s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007890s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006772s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2016-10-25T16:46:45+08:00 ] 192.168.233.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.022256s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002943s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212405 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385205 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212405 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385205 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xh_seo_rule` WHERE ( (app='' or app='Main') and (controller='' or controller='Index') and (action='' or action='index') and status=1 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.185190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.210034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017065s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.223343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016566s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033953s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 75 行.
+SQL: SHOW COLUMNS FROM `xh_adv` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 5 ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 6 ORDER BY sort desc LIMIT 4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.258500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015688s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.062800s ]
+SQL: SHOW COLUMNS FROM `xh_picture` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017500s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.064590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002744s ]
+
+[ 2016-10-25T16:48:39+08:00 ] 192.168.233.1 /Main/Article/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010848s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001755s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212519 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385319 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002053s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000626s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000041s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000922s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003646s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002271s ]
+
+[ 2016-10-25T16:48:44+08:00 ] 192.168.233.1 /Main/Article/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013927s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002567s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212523 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385323 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003090s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000929s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001045s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000047s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001209s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004918s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003183s ]
+
+[ 2016-10-25T16:48:52+08:00 ] 192.168.233.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012567s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212532 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385332 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212532 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385332 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002586s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004065s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004182s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004061s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008386s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 75 行.
+SQL: SHOW COLUMNS FROM `xh_adv` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 5 ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 6 ORDER BY sort desc LIMIT 4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.148959s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014255s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033190s ]
+SQL: SHOW COLUMNS FROM `xh_picture` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016555s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.035477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003671s ]
+
+[ 2016-10-25T16:49:19+08:00 ] 192.168.233.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008481s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212559 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385359 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212559 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385359 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003285s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002541s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002647s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002179s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004979s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 75 行.
+SQL: SHOW COLUMNS FROM `xh_adv` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 5 ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 6 ORDER BY sort desc LIMIT 4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.149278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012564s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.028961s ]
+SQL: SHOW COLUMNS FROM `xh_picture` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014976s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.031353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002165s ]
+
+[ 2016-10-25T16:49:23+08:00 ] 192.168.233.1 /Main/Article/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006616s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212563 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385363 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001722s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001063s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001233s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000042s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001385s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003480s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002391s ]
+
+[ 2016-10-25T16:54:41+08:00 ] 192.168.233.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.017338s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002974s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212881 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385681 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477212881 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477385681 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002748s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002460s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002574s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003041s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005758s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/c97600f8b0866024431410f82216af53.php 第 75 行.
+SQL: SHOW COLUMNS FROM `xh_adv` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 5 ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xh_adv` WHERE `status` = 1 AND `pos_id` = 6 ORDER BY sort desc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.180129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014154s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032924s ]
+SQL: SHOW COLUMNS FROM `xh_picture` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xh_picture` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016660s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.035437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003922s ]
+
+[ 2016-10-25T17:07:01+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.015219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003033s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477213621 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477386420 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002373s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000850s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000962s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000051s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001143s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011475s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005479s ]
+
+[ 2016-10-25T17:07:07+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011558s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477213627 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477386427 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001998s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000623s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000092s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000959s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003316s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002611s ]
+
+[ 2016-10-25T17:07:09+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477213629 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477386429 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000540s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000043s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000804s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001382s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-10-25T17:07:21+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477213641 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477386441 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000874s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000050s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001230s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004160s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2016-10-25T17:07:30+08:00 ] 192.168.233.1 /Main/Article/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+SQL: SHOW COLUMNS FROM `xh_config` [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `xh_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xh_document` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `create_time` > 1477213650 AND `status` = 1 AND `pid` = 0 AND ( deadline = 0 OR deadline > 1477386450 ) ORDER BY `id` DESC LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`media` FROM `xh_document` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `xh_document_article` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `xh_document_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: oneplus_seo_meta /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+NOTIC: [8] Undefined variable: seo /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xh_seo_rule` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001734s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000999s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001146s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000047s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001368s ]
+NOTIC: [8] Undefined variable: category /home/vagrant/Code/onethink/Runtime/Cache/Main/f248463fef88c7cef2daa79675299b83.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003753s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003089s ]
+
