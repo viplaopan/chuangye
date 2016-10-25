@@ -40,7 +40,7 @@ return array(
     'DB_NAME'   => 'xh_db', // 数据库名
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => 'Pa0d31f219',  // 密码
-    'DB_PORT'   => '3306', // 端口
+    'DB_PORT'   => '33060', // 端口
     'DB_PREFIX' => 'xh_', // 数据库表前缀
     
     'LOAD_EXT_CONFIG' => 'router',
