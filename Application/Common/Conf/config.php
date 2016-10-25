@@ -34,7 +34,7 @@ return array(
     /* 全局过滤配置 */
     'DEFAULT_FILTER' => '', //全局过滤函数
 
-    /* 数据库配置 */
+    /* 数据库配置 */ 
     'DB_TYPE'   => 'mysql', // 数据库类型
     'DB_HOST'   => 'localhost', // 服务器地址
     'DB_NAME'   => 'xh_db', // 数据库名
