@@ -22,7 +22,7 @@ class IndexController extends HomeController {
     	$map['create_time'] = array('gt',(time()-3600*48));
     	$hots = D('Document')->where($map)->limit('10')->order('create_time asc')->lists(null);
     	$this->assign('hots',$hots);
-    	//最新资讯
+    	//最新资讯1
     	$lists = D('Document')->where($map)->limit('10')->order('create_time desc')->lists(null);
     	$this->assign('lists',$lists);
         $this->display();
