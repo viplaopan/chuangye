@@ -168,10 +168,10 @@
 			<a href="">关于我们</a>
 			 <a href="">会议活动</a>
 			  <a href="">广告与服务</a>
-			   <a href="">入驻创投库</a> 
+			   <a href="http://www.fk68.net/">肥客联邦</a> 
 			   </div>
 			<div class="copyright com-width">
-			<p>Copyright 2007-2016 cyzone.cn All rights reserved 京ICP证070362号 京ICP备08103950号 京公海网安备110108000742号新出发京零字第朝140005号</p>
+			<p>Copyright 2007-2016 www.36eq.com All rights reserved 沪ICP备14005381号-3</p>
 			</div>
 			</div>
 			       </div>
@@ -201,7 +201,6 @@
 <div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
 	
 </div>
-
 	<!-- /底部 -->
 </body>
 </html>
