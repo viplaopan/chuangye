@@ -30,10 +30,14 @@ class ProductController extends HomeController {
         $maplists['status'] = 1;
         $maplists['id'] = array('EGT',$id);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $lists = D('Product')->where($maplists)->order('id desc')->limit(10)->select();
 =======
         $lists = D('Product')->where($maplists)->order('id asc')->limit(10)->select();
 >>>>>>> d78dbb3b2cfa84e0ee1abcb7d49228257f3bc58a
+=======
+        $lists = D('Product')->where($maplists)->order("id asc")->limit(10)->select();
+>>>>>>> 5053048fbe4b6f26ef5376bc671604e71c8d6057
         $this->assign('lists', $lists);
         $this->display();
     }
