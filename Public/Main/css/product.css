@@ -139,3 +139,6 @@
 }
 .product-images .screenshots-wrapper ul{padding:0;}
 .product-images .screenshots-wrapper ul li{margin-right: 10px; float: left;}
+.product-images .screenshots{
+    height: 350px;overflow: hidden;
+}
