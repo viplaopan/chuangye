@@ -140,17 +140,19 @@
                     </case>
                     <case value="gallery">
                     	<php>
-                    		$goods_id = I("get.id");
-                    		if($goods_id){
-                    			$gallery = D('GoodsGallery')->where('goods_id = '. $goods_id)->select();
+
+                    		$id = I("get.id");
+                    		if($id){
+                    			$gallery = D($field['name'])->where('pid = '. $id)->select();
                     		}
+                            $setting = C($field['opt']);
                     	</php>
                         <div class="controls">
                             <input type="file" id="upload_picture_{$field.name}">
                             <input type="hidden" name="{$field.name}" id="cover_id_{$field.name}" value="{$field['value']}"/>
                             <div class="upload-img-box">
                                 <volist name="gallery" id="vo">
-                                	<div class="upload-pre-item gallery-item" style="float:left;margin-right: 5px;"><img src="/Uploads/Goods/Gallery/{$vo.img_url}"/><input name="gallery[]" value="{$vo.img_url}" type="hidden"/></div>
+                                	<div class="upload-pre-item gallery-item" style="float:left;margin-right: 5px;"><img src="{$setting.rootPath}{$vo.path}"/><input name="{$field.name}[]" value="{$vo.path}" type="hidden"/></div>
                                     
                                 </volist>
                             </div>
@@ -163,7 +165,7 @@
                                 "swf"             : "__STATIC__/uploadify/uploadify.swf",
                                 "fileObjName"     : "download",
                                 "buttonText"      : "上传图片",
-                                "uploader"        : "{:U('File/uploadImage',array('session_id'=>session_id(),'images_config'=>'GALLERY_UPLOAD'))}",
+                                "uploader"        : "{:U('File/uploadGallery',array('session_id'=>session_id(),'settingTag'=>$field['opt']))}",
                                 "width"           : 120,
                                 'removeTimeout'	  : 1,
                                 'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
@@ -178,7 +180,7 @@
                                 src = data.url || '__ROOT__' + data.savepath + data.savename;
                                 $("#cover_id_{$field.name}").val(src);
                                 $("#cover_id_{$field.name}").parent().find('.upload-img-box').append(
-                                        '<div class="upload-pre-item gallery-item" style="float:left;margin-right: 5px;"><img src="/Uploads/Goods/Gallery/' + src + '"/><input name="gallery[]" value="' + src + '" type="hidden"/></div>'
+                                        '<div class="upload-pre-item gallery-item" style="float:left;margin-right: 5px;"><img src="{$setting.rootPath}'+ src + '"/><input name="{$field.name}[]" value="' + src + '" type="hidden"/></div>'
                                 );
                             }
                             $(function(){

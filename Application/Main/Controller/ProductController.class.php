@@ -14,23 +14,23 @@ use OT\DataDictionary;
  * 前台首页控制器
  * 主要获取首页聚合数据
  */
-class IndexController extends HomeController {
-
+class ProductController extends HomeController {
 	//系统首页
-    public function index(){
-    	//48小时快报
-    	$map['create_time'] = array('gt',(time()-3600*48));
-    	$hots = D('Document')->where($map)->limit('10')->order('create_time asc')->lists(null);
-    	$this->assign('hots',$hots);
-    	//最新资讯
-    	$lists = D('Document')->limit('10')->order('create_time desc')->lists(null);
-    	$this->assign('lists',$lists);
+    public function detail($id = 0){
+    	//详情
+    	$map['status'] = 1;
+        $info = D('Product')->where($map)->find($id);
+    	$this->assign('info', $info);
 
-        //新产品
-        $pr['status'] = 1;
-        $pros = D('Product')->where($pr)->select();
-        $this->assign('pros',$pros);
+        //产品图片
+        $galleries = D('ProductGallery')->where(array('pid'=>$id))->select();
+        $this->assign('galleries', $galleries);
+
+        //列表
+        $maplists['status'] = 1;
+        $maplists['id'] = array('ELT',$id);
+        $lists = D('Product')->where($maplists)->limit(10)->select();
+        $this->assign('lists', $lists);
         $this->display();
     }
-
 }

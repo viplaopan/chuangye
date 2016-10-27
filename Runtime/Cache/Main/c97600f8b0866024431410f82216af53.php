@@ -96,7 +96,7 @@
                             <div class="item-inner">
                                 <div class="item-title"><a href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a></div>
                                 <div style="padding-bottom:10px;">
-                                    <a href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>">
+                                    <a title="<?php echo ($vo["title"]); ?>" href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>">
                                         <span class="item-time" data-stamp="1477265398"><?php echo (date("H:i",$vo["create_time"])); ?></span>
                                      <span class="item-time" style="margin-left:10px;"><?php echo ($vo["media"]); ?></span>                                </div>
                                     </a>
@@ -117,10 +117,10 @@
                     <div class="article-list">
                         <?php if(is_array($hots)): $i = 0; $__LIST__ = $hots;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="article-item clearfix" data-id="304865">
                             <div class="item-pic pull-left">
-                                <a target="_blank" href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>" title=""><img src="<?php echo get_cover($vo['cover_id'],'path');?>"></a>
+                                <a target="_blank" href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>" title=""><img title="<?php echo ($vo["title"]); ?>" alt="<?php echo ($vo["title"]); ?>" src="<?php echo get_cover($vo['cover_id'],'path');?>"></a>
                             </div>
                             <div class="item-intro">
-                                <a target="_blank" href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>" class="item-title"><?php echo ($vo["title"]); ?></a>
+                                <a target="_blank" href="<?php echo U('Main/Article/detail',array('id'=>$vo['id']));?>" class="item-title" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a>
                                 <p class="item-desc"><?php echo ($vo["description"]); ?></p>
                                 <div class="item-push-info"><?php echo ($vo["media"]); ?> | <span data-time="1477270369"><?php echo (date("Y-m-d",$vo["create_time"])); ?></span></div>
                             </div>
@@ -133,14 +133,10 @@
                     发现新产品
                 </h1>
                 <div class="border">
-                    <div class="conference-item import">
-                        <span class="glyphicon glyphicon-stop"></span>
-                        <a target="_blank" class="dot-1" href="">DEMO SPACE融资加速通道</a>
-                    </div>
-                    <div class="conference-item import">
-                        <span class="glyphicon glyphicon-stop"></span>
-                        <a target="_blank" class="dot-1" href="">2017年30岁以下创业新贵评选</a>
-                    </div>
+                    <?php if(is_array($pros)): $i = 0; $__LIST__ = $pros;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="conference-item import">
+                            <span class="glyphicon glyphicon-stop"></span>
+                            <a target="_blank" class="dot-1" title="<?php echo ($vo["desc"]); ?>" href="<?php echo U('Main/Product/detail',array('id'=>$vo['id']));?>"><?php echo ($vo["title"]); ?></a>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
             </div>
         </div>
@@ -168,7 +164,8 @@
 			<a href="">关于我们</a>
 			 <a href="">会议活动</a>
 			  <a href="">广告与服务</a>
-			   <a href="http://www.fk68.net/">肥客联邦</a> 
+			   <a target="block" href="http://www.fk68.net/">肥客联邦</a>
+			   <a target="block" href="http://www.linxuetao.com/">文韬营销工作室</a> 
 			   </div>
 			<div class="copyright com-width">
 			<p>Copyright 2007-2016 www.36eq.com All rights reserved 沪ICP备14005381号-3</p>
