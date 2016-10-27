@@ -29,7 +29,11 @@ class ProductController extends HomeController {
         //列表
         $maplists['status'] = 1;
         $maplists['id'] = array('EGT',$id);
+<<<<<<< HEAD
         $lists = D('Product')->where($maplists)->order('id desc')->limit(10)->select();
+=======
+        $lists = D('Product')->where($maplists)->order('id asc')->limit(10)->select();
+>>>>>>> d78dbb3b2cfa84e0ee1abcb7d49228257f3bc58a
         $this->assign('lists', $lists);
         $this->display();
     }
