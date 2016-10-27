@@ -154,7 +154,8 @@
 			<a href="">关于我们</a>
 			 <a href="">会议活动</a>
 			  <a href="">广告与服务</a>
-			   <a href="http://www.fk68.net/">肥客联邦</a> 
+			   <a target="block" href="http://www.fk68.net/">肥客联邦</a>
+			   <a target="block" href="http://www.linxuetao.com/">文韬营销工作室</a> 
 			   </div>
 			<div class="copyright com-width">
 			<p>Copyright 2007-2016 www.36eq.com All rights reserved 沪ICP备14005381号-3</p>

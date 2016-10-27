@@ -28,8 +28,8 @@ class ProductController extends HomeController {
 
         //列表
         $maplists['status'] = 1;
-        $maplists['id'] = array('ELT',$id);
-        $lists = D('Product')->where($maplists)->limit(10)->select();
+        $maplists['id'] = array('EGT',$id);
+        $lists = D('Product')->where($maplists)->order('id desc')->limit(10)->select();
         $this->assign('lists', $lists);
         $this->display();
     }
