@@ -116,4 +116,25 @@ class FileController extends AdminController {
         /* 返回JSON数据 */
         $this->ajaxReturn($return);
     }
+    /**
+     * 上传图片
+     * @author huajie <banhuajie@163.com>
+     */
+    public function uploadGallery($settingTag = ''){
+        //TODO: 用户登录检测
+        /* 返回标准数据 */
+        $return  = array('status' => 1, 'info' => '上传成功', 'data' => '');
+
+        
+         /* 上传文件 */
+        $setting = C($settingTag);
+        $setting['removeTrash'] = array($this, 'removeTrash');
+        $Upload = new Upload($setting, C('PICTURE_UPLOAD_DRIVER'), C("UPLOAD_{$pic_driver}_CONFIG"));
+        $info   = $Upload->upload($_FILES);
+        $info['download']['status'] = 1;
+        /* 返回JSON数据 */
+        $info['download']['setting'] = $setting;
+        $this->ajaxReturn($info['download']);
+        
+    }
 }

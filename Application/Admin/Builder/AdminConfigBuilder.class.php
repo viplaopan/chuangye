@@ -129,10 +129,9 @@ class AdminConfigBuilder extends AdminBuilder
 
         return $this->key($name, $title, $subtitle, 'imageOne');
     }
-	public function keyImageGallery($name, $title, $subtitle = null)
+	public function keyImageGallery($name, $title, $subtitle = null, $options)
     {
-
-        return $this->key($name, $title, $subtitle, 'gallery');
+        return $this->key($name, $title, $subtitle, 'gallery', $options);
     }
 	
     public function keySingleUserGroup($name, $title, $subtitle = null)
